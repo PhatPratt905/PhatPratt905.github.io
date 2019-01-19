@@ -38,3 +38,9 @@ function emailForm() {
     x.style.display = "block";
   }
 }
+$(function() {
+  $('.a-link').click(function() {
+    $('.a-link').removeClass("active");
+    $(this).addClass("active");
+  })
+});

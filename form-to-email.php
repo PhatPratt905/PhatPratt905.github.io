@@ -21,14 +21,14 @@ if(IsInjected($visitor_email))
     exit;
 }
 
-$email_from = 'phatpratt905@gmail.com';
-$email_subject = "Booking Music Lessons";
+$email_from = $vistor_email;
+$email_subject = "Phat Pratt Productions";
 $email_body = "You have received a new message from the user $name.\n".
-    "Here is the message:\n $message".
+    "Here is the message:\n $message";
 
 $to = 'phatpratt905@gmail.com';
 $headers = "From: $email_from \r\n";
-$headers .= "Reply-To: $visitor_email \r\n";
+$headers = "Reply-To: $visitor_email \r\n";
 //Send the email!
 mail($to,$email_subject,$email_body,$headers);
 //done. redirect to thank-you page.
