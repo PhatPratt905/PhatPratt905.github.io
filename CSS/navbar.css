@@ -22,10 +22,7 @@
 }
 .navbar-img {
   width: 15%;
+  max-width: 80px;
   height: 15%;
-}
-.navbar-brand {
-  font-family: 'Rock Salt', cursive;
-  font-size: 1.1em;
-  cursor: auto;
+  max-height: 80px;
 }

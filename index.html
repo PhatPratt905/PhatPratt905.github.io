@@ -81,13 +81,29 @@
       <div id="contact" class="hidden switch">
         <div class="row">
           <img class="promo-img contact-img" src="Pics\Promo1.jpg">
-          <div class="contact-text w-100">
-            <h2>Contact</h2>
-            <p>
-              Text or Call: 905-853-4117 <br>
-              Email: phatpratt905@gmail.com <br>
-              Fiverr: <a href="https://www.fiverr.com/phatpratt905">https://www.fiverr.com/phatpratt905</a>
-            </p>
+          <div class="center-div">
+            <div class="contact-text w-100">
+              <p>
+                phatpratt905@gmail.com
+              </p>
+            </div>
+
+            <form method="post" name="myemailform" action="form-to-email.php" onsubmit="thankYou()">
+              <div class="form-row">
+                <div class="form-group col-6">
+                  <input class="form-control" type="text" placeholder="NAME" name="name" required>
+                </div>
+                <div class="form-group col-6">
+                  <input class="form-control" type="email" placeholder="EMAIL" name="email">
+                </div>
+                <div class="form-group col-12">
+                  <textarea class="form-control" placeholder="MESSAGE" name="message" required></textarea>
+                </div>
+                <div class="form-group col-12">
+                  <input class="btn btn-light btn-lg btn-block" type="submit" name="submit" value="Send">
+                </div>
+              </div>
+            </form>
           </div>
         </div>
       </div>
