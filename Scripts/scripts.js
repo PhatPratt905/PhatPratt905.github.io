@@ -44,3 +44,18 @@ $(function() {
     $(this).addClass("active");
   })
 });
+
+var lastScrollTop = 0;
+$(document).on('scroll', function () {
+    var st = $(this).scrollTop();
+    if (st > lastScrollTop) {
+        $('#navBar').fadeOut(1000);
+    } else {
+        $('#navBar').fadeIn(1000);
+    }
+    lastScrollTop = st;
+});
+
+function hideNav() {
+  $('#navBar').fadeOut(1000);
+}
