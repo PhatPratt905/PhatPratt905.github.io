@@ -17,10 +17,18 @@ function hideNav() {
   }
 }
 
-
 function myFunction(x) {
   x.classList.toggle("change");
 }
+if ($(window).width() < 768) {
+  $(document).on('click', '.nav-link', function() {
+      $(".yes").trigger('click');
+      $("#navbarSupportedContent").collapse
+  });
+}
+
+
+
 
 $(".a-link").on('click', function() {
   var x = $(this).attr("href");
