@@ -9,10 +9,14 @@ if ($(window).width() > 768) {
       }
       lastScrollTop = st;
   });
-  function hideNav() {
+}
+
+function hideNav() {
+  if ($(window).width() > 768) {
     $('#navBar').fadeOut(1000);
   }
 }
+
 
 function myFunction(x) {
   x.classList.toggle("change");
