@@ -1,7 +1,3 @@
-$(document).ready(function () {
-  $(this).scrollTop(0);
-});
-
 if ($(window).width() > 768) {
   var lastScrollTop = 0;
   $(document).on('scroll', function () {
@@ -35,7 +31,6 @@ if ($(window).width() < 768) {
 
 
 $(".a-link").on('click', function() {
-  $(this).scrollTop(0);
   var x = $(this).attr("href");
   x = x.slice( 1 );
   $(".switch").fadeOut(10);
